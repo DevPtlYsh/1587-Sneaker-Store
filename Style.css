@@ -1,0 +1,674 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #fff;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.site-header {
+  background: #1f2937;
+  color: #fff;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4em 2em;
+  background: #f3f4f6;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 1em;
+}
+
+/* Collections/Grid Layout */
+.collections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2em;
+  padding: 2em;
+}
+
+.collection {
+  background: #f9fafb;
+  padding: 1.5em;
+  border-radius: 0.75em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.collection:hover {
+  transform: translateY(-5px);
+}
+
+.collection h2 {
+  color: #2563eb;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+/* About Page Styles */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding: 3em 1.5em;
+  background: #fefefe;
+}
+
+.about-block {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.about-block:hover {
+  transform: scale(1.02);
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-content {
+  padding: 2em;
+}
+
+.about-content h2 {
+  color: #0D47A1;
+  margin-bottom: 0.5em;
+  font-size: 1.6em;
+}
+
+.about-content p {
+  line-height: 1.6;
+  font-size: 1em;
+  color: #374151;
+}
+
+/* Apparel Page Styles */
+.apparel-section {
+  padding: 4em 2em;
+  background-color: #fefefe;
+}
+
+.apparel-grid {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.apparel-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.apparel-card:hover {
+  transform: translateY(-5px);
+}
+
+.apparel-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.apparel-content {
+  padding: 1.5em;
+}
+
+.apparel-content h3 {
+  font-size: 1.1em;
+  margin: 0 0 0.5em;
+  color: #111827;
+}
+
+.apparel-content p {
+  font-size: 0.95em;
+  color: #4b5563;
+  margin-bottom: 1em;
+}
+
+.apparel-price {
+  font-weight: bold;
+  color: #111827;
+}
+
+/* Legacy Page Styles */
+.legacy-hero {
+  background: linear-gradient(145deg, #fff8dc, #f3f1e5);
+  padding: 4em 2em 2em;
+  text-align: center;
+}
+
+.legacy-hero h1 {
+  font-size: 2.8em;
+  color: #0f172a;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.4em;
+}
+
+.legacy-hero p {
+  font-size: 1.2em;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 1.5em;
+}
+
+.legacy-hero img {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.legacy-section {
+  padding: 3em 2em;
+  background-color: #fffdf8;
+}
+
+.legacy-block {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.legacy-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  background: #ffffff;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.legacy-row:hover {
+  transform: translateY(-4px);
+}
+
+.legacy-text h2 {
+  font-size: 1.6em;
+  color: #374151;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5em;
+}
+
+.legacy-text p {
+  font-size: 1.05em;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.legacy-image img {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+}
+
+/* Reviews Page Styles */
+.reviews-section {
+  padding: 4em 2em;
+  background-color: #f9fafb;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+
+.review-block {
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 0.75em;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: start;
+  gap: 1.5em;
+  position: relative;
+}
+
+.review-block img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #60a5fa;
+}
+
+.review-content h3 {
+  margin: 0;
+  font-size: 1em;
+  color: #111827;
+}
+
+.review-content p {
+  margin: 0.5em 0;
+  font-size: 0.95em;
+  color: #374151;
+}
+
+.review-rating {
+  color: #f59e0b;
+  font-size: 1.2em;
+}
+
+/* Shop Page Styles */
+.sneaker-section {
+  padding: 4em 2em;
+  background-color: #f3f4f6;
+}
+
+.sneaker-grid {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.sneaker-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.sneaker-card:hover {
+  transform: translateY(-5px);
+}
+
+.sneaker-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.sneaker-content {
+  padding: 1.5em;
+}
+
+.sneaker-content h3 {
+  font-size: 1.1em;
+  margin: 0 0 0.5em;
+  color: #111827;
+}
+
+.sneaker-content p {
+  font-size: 0.95em;
+  color: #4b5563;
+  margin-bottom: 1em;
+}
+
+.sneaker-price {
+  font-weight: bold;
+  color: #111827;
+}
+
+/* Common Elements */
+.callout {
+  background: #fef3c7;
+  padding: 3em 2em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.callout h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.our-story-preview {
+  padding: 3em 1.5em;
+  background-color: #f3f4f6;
+  text-align: center;
+  border-radius: 1em;
+  margin: 3em 1em;
+}
+
+.our-story-preview h2 {
+  font-size: 2em;
+  color: #0D47A1;
+  margin-bottom: 0.5em;
+}
+
+.our-story-preview p {
+  font-size: 1em;
+  color: #374151;
+  max-width: 800px;
+  margin: 0 auto 1.5em;
+  line-height: 1.6;
+}
+
+.our-story-preview a,
+.shop-backlink a,
+.apparel-backlink a {
+  background-color: #1565C0;
+  color: white;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  border-radius: 0.5em;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.our-story-preview a:hover,
+.shop-backlink a:hover,
+.apparel-backlink a:hover {
+  background-color: #0D47A1;
+}
+
+.shop-backlink,
+.apparel-backlink {
+  text-align: center;
+  margin: 30px auto;
+  padding: 0 2em;
+}
+
+.site-footer {
+  background: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 0.9em;
+}
+
+.reviews-section {
+  padding: 3em 1.5em;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.review-block {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 1.5em;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.review-block:hover {
+  transform: translateY(-4px);
+}
+
+.review-block img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid #0d47a1;
+}
+
+.review-content {
+  flex: 1;
+}
+
+.review-content h2 {
+  font-size: 1.25em;
+  color: #0d47a1;
+  margin-bottom: 0.5em;
+}
+
+.review-content p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+.review-rating {
+  font-size: 1.2em;
+  color: #facc15; /* golden yellow */
+}
+.about-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 3em 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  color: #1f2937; /* Dark slate for text */
+  line-height: 1.6;
+}
+
+.about-section h2 {
+  font-size: 1.6em;
+  color: #0d47a1; /* Deep blue (matches your brand) */
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  border-left: 4px solid #facc15;
+  padding-left: 12px;
+}
+
+.about-section p {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  color: #333;
+}
+
+/* Hero section consistency */
+.hero {
+  padding: 3em 1.5em;
+  text-align: center;
+  background-color: #f3f4f6;
+}
+
+.hero h1 {
+  font-size: 2em;
+  color: #0d47a1;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.1em;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #fff;
+    color: #1f2937;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  /* Header */
+  .site-header {
+    background: #1f2937;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  
+  .main-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+    display: block;
+    text-align: center;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 2em 1em;
+    text-align: center;
+    background: #f3f4f6;
+  }
+  
+  .hero h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+  }
+  
+  .hero img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1em;
+  }
+  
+  /* Content Blocks */
+  .about-block,
+  .legacy-row,
+  .sneaker-card,
+  .apparel-card,
+  .review-block {
+    background: #fff;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Images */
+  .hero img,
+  .legacy-hero img,
+  .about-block img,
+  .legacy-image img,
+  .sneaker-card img,
+  .apparel-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 0.5em 0;
+  }
+  
+  /* Text Content */
+  .about-content h2,
+  .legacy-text h2 {
+    font-size: 1.4em;
+    color: #0D47A1;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Footer */
+  .site-footer {
+    background: #1f2937;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+  }
+  
+  /* Utility Classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .mobile-padding {
+    padding: 0 1em;
+  }
+
+  .about-section {
+    padding: 2em 1.2em;
+  }
+
+  .about-section h2 {
+    font-size: 1.3em;
+  }
+
+  .hero h1 {
+    font-size: 1.7em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .review-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .review-block img {
+    margin-bottom: 1em;
+  }
+
+  .review-content h2 {
+    font-size: 1.1em;
+  }
+
+  .review-content p {
+    font-size: 0.95em;
+  }
+}
+
+
